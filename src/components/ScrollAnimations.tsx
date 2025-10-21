@@ -42,11 +42,11 @@ const CharacterV1 = ({
     <motion.span
       className={cn(
         "inline-block font-bold uppercase tracking-tighter text-black",
-        isSpace && "w-4",
+        isSpace && "w-2 sm:w-4 flex-shrink-0",
       )}
       style={{ x, rotateX }}
     >
-      {char}
+      {isSpace ? "\u00A0" : char}
     </motion.span>
   );
 };
@@ -57,7 +57,9 @@ export const ScrollAnimations = () => {
 
   const { scrollYProgress } = useScroll({ target: targetRef });
 
-  const text = "A Hub For Innovation";
+  const line1 = "A Hub For";
+  const line2 = "Innovation";
+  const text = `${line1} ${line2}`;
   const characters = text.split("");
   const centerIndex = Math.floor(characters.length / 2);
 
@@ -75,18 +77,35 @@ export const ScrollAnimations = () => {
         className="relative box-border flex h-[210vh] items-center justify-center gap-[2vw] overflow-hidden p-4 sm:p-[2vw]"
       >
         <div
-          className="font-geist w-full max-w-4xl text-center text-6xl"
+          className="font-geist w-full max-w-4xl text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
           style={{ perspective: "500px" }}
         >
-          {characters.map((char, index) => (
-            <CharacterV1
-              key={index}
-              char={char}
-              index={index}
-              centerIndex={centerIndex}
-              scrollYProgress={scrollYProgress}
-            />
-          ))}
+          <div className="flex flex-col items-center gap-2">
+            {/* Line 1: A Hub For */}
+            <div className="inline-flex flex-wrap justify-center gap-x-1">
+              {line1.split("").map((char, index) => (
+                <CharacterV1
+                  key={`line1-${index}`}
+                  char={char}
+                  index={index}
+                  centerIndex={Math.floor(line1.length / 2)}
+                  scrollYProgress={scrollYProgress}
+                />
+              ))}
+            </div>
+            {/* Line 2: Innovation */}
+            <div className="inline-flex flex-wrap justify-center gap-x-1">
+              {line2.split("").map((char, index) => (
+                <CharacterV1
+                  key={`line2-${index}`}
+                  char={char}
+                  index={index + line1.length + 1}
+                  centerIndex={centerIndex}
+                  scrollYProgress={scrollYProgress}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
