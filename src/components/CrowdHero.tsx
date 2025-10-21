@@ -257,12 +257,15 @@ export const CrowdHero = () => {
       </div>
 
       <div className="absolute left-1/2 top-1/4 z-10 grid -translate-x-1/2 justify-items-center gap-6 text-center px-4">
-        <span className="max-w-[20ch] text-sm uppercase leading-tight opacity-50">
+        <span className="text-sm uppercase leading-tight opacity-50 whitespace-nowrap">
           MAHE Innovation Centre
         </span>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
           We create job creators.
         </h1>
+        <span className="text-sm uppercase leading-tight opacity-50 whitespace-nowrap">
+          Dont be the crowd, be the change.
+        </span>
       </div>
       <div className="absolute bottom-0 left-0 right-0 h-full w-full" aria-hidden="true">
         <CrowdCanvas src="/images/peeps/all-peeps.png" rows={15} cols={7} />
