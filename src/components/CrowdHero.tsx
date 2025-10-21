@@ -247,6 +247,15 @@ const CrowdCanvas = ({ src, rows = 15, cols = 7 }: CrowdCanvasProps) => {
 export const CrowdHero = () => {
   return (
     <section id="home" className="relative h-screen w-full overflow-hidden bg-white text-black">
+      {/* Logo in top-left corner */}
+      <div className="absolute left-4 top-4 z-20 sm:left-8 sm:top-8">
+        <img
+          src="/images/logo.svg"
+          alt="MAHE Innovation Centre Logo"
+          className="h-12 w-auto sm:h-16 md:h-20"
+        />
+      </div>
+
       <div className="absolute left-1/2 top-1/4 z-10 grid -translate-x-1/2 justify-items-center gap-6 text-center px-4">
         <span className="max-w-[20ch] text-sm uppercase leading-tight opacity-50">
           MAHE Innovation Centre

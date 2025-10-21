@@ -22,7 +22,7 @@ function App() {
     <LenisSmoothScroll>
       {/* Navigation - Fixed on top right */}
       <Navbar />
-      
+
       {/* SECTION 1: The 100vh Hero with GSAP Crowd Animation */}
       <CrowdHero />
 

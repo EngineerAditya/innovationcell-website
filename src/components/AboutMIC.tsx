@@ -21,9 +21,9 @@ const AboutMIC = () => {
                 Our Mission
               </h3>
               <p className="text-lg leading-relaxed text-gray-700">
-                The MAHE Innovation Centre is dedicated to nurturing a vibrant ecosystem where 
-                ideas transform into impactful ventures. We provide the resources, mentorship, 
-                and community support needed to turn visionary concepts into successful businesses 
+                The MAHE Innovation Centre is dedicated to nurturing a vibrant ecosystem where
+                ideas transform into impactful ventures. We provide the resources, mentorship,
+                and community support needed to turn visionary concepts into successful businesses
                 that create jobs and drive economic growth.
               </p>
             </div>
@@ -38,9 +38,9 @@ const AboutMIC = () => {
                   Building Tomorrow's Leaders
                 </h3>
                 <p className="leading-relaxed text-gray-600">
-                  We envision a future where every student has the opportunity to become a 
-                  job creator rather than a job seeker. Through hands-on experience, cutting-edge 
-                  resources, and a supportive community, we're shaping the next generation of 
+                  We envision a future where every student has the opportunity to become a
+                  job creator rather than a job seeker. Through hands-on experience, cutting-edge
+                  resources, and a supportive community, we're shaping the next generation of
                   entrepreneurs and innovators.
                 </p>
               </div>
@@ -53,9 +53,9 @@ const AboutMIC = () => {
                   Creating Real-World Change
                 </h3>
                 <p className="leading-relaxed text-gray-600">
-                  Since our inception, MIC has supported over 150+ startups, facilitated 
-                  connections with 200+ industry mentors, and helped raise ₹50+ crores in 
-                  funding. Our alumni have created hundreds of jobs and continue to make a 
+                  Since our inception, MIC has supported over 150+ startups, facilitated
+                  connections with 200+ industry mentors, and helped raise ₹50+ crores in
+                  funding. Our alumni have created hundreds of jobs and continue to make a
                   meaningful impact in their respective industries.
                 </p>
               </div>

@@ -171,7 +171,7 @@ const EventsInitiatives = () => {
             <p className="mb-6 text-gray-600">
               Stay updated with our latest events and initiatives. Join our community today!
             </p>
-            
+
             {/* Email Subscription Form */}
             <form onSubmit={handleSubscribe} className="mx-auto max-w-md">
               <div className="flex flex-col gap-3 sm:flex-row">

@@ -44,7 +44,7 @@ const Navbar = () => {
 
     // Add scroll listener
     window.addEventListener('scroll', handleScroll);
-    
+
     // Call once to set initial state
     handleScroll();
 
@@ -54,7 +54,7 @@ const Navbar = () => {
 
   const handleNavClick = (item: { label: string; id: string | null }) => {
     setActiveSection(item.label);
-    
+
     if (item.id) {
       const element = document.getElementById(item.id);
       if (element) {
@@ -73,33 +73,29 @@ const Navbar = () => {
           <li key={item.label}>
             <button
               onClick={() => handleNavClick(item)}
-              className={`group relative flex items-center gap-3 transition-all duration-300 ${
-                activeSection === item.label ? 'opacity-100' : 'opacity-40 hover:opacity-70'
-              }`}
+              className={`group relative flex items-center gap-3 transition-all duration-300 ${activeSection === item.label ? 'opacity-100' : 'opacity-40 hover:opacity-70'
+                }`}
               aria-label={`Navigate to ${item.label}`}
               aria-current={activeSection === item.label ? 'page' : undefined}
             >
               {/* Text label - shown on hover */}
               <span
-                className={`text-sm font-medium tracking-tight text-black transition-all duration-300 ${
-                  activeSection === item.label
+                className={`text-sm font-medium tracking-tight text-black transition-all duration-300 ${activeSection === item.label
                     ? 'translate-x-0 opacity-100'
                     : 'translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100'
-                }`}
+                  }`}
               >
                 {item.label}
               </span>
 
               {/* Dot indicator */}
               <span
-                className={`relative flex h-3 w-3 items-center justify-center transition-all duration-300 ${
-                  activeSection === item.label ? 'scale-125' : 'scale-100'
-                }`}
+                className={`relative flex h-3 w-3 items-center justify-center transition-all duration-300 ${activeSection === item.label ? 'scale-125' : 'scale-100'
+                  }`}
               >
                 <span
-                  className={`absolute inline-flex h-full w-full rounded-full bg-black transition-all duration-300 ${
-                    activeSection === item.label ? 'opacity-100' : 'opacity-40'
-                  }`}
+                  className={`absolute inline-flex h-full w-full rounded-full bg-black transition-all duration-300 ${activeSection === item.label ? 'opacity-100' : 'opacity-40'
+                    }`}
                 ></span>
                 {activeSection === item.label && (
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-black"></span>
