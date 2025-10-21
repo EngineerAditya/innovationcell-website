@@ -248,7 +248,7 @@ export const CrowdHero = () => {
   return (
     <section id="home" className="relative h-screen w-full overflow-hidden bg-white text-black">
       <div className="absolute left-1/2 top-1/4 z-10 grid -translate-x-1/2 justify-items-center gap-6 text-center px-4">
-        <span className="relative max-w-[20ch] text-sm uppercase leading-tight opacity-50 after:absolute after:left-1/2 after:top-full after:h-16 after:w-px after:bg-gradient-to-b after:from-white after:to-black after:content-['']">
+        <span className="max-w-[20ch] text-sm uppercase leading-tight opacity-50">
           MAHE Innovation Centre
         </span>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
