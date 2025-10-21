@@ -13,9 +13,9 @@ function App() {
     title: "Join Us",
     description:
       "Get in touch with the MAHE Innovation Centre. We're looking for collaborators, ideas, and innovators to join our ecosystem.",
-    phone: "+91 96948 63033",
+    phone: "+91 96069 XXXXX",
     email: "contact@mic.mahe.edu",
-    web: { label: "mic.mahe.edu", url: "#" },
+    web: { label: "maheinnovation.vercel.app", url: "https://maheinnovation.vercel.app" },
   };
 
   return (
